@@ -1,0 +1,19 @@
+define
+
+coincide sub relation,
+    relates bigram_one,
+    relates bigram_two,
+    has count;
+
+bigram sub entity,
+    plays bigram_one,
+    plays bigram_two,
+    has name;
+
+    name sub attribute,
+        datatype string;
+
+    count sub attribute,
+        datatype long;
+
+
